@@ -10,7 +10,7 @@ testova prolazi u CI-ju.
 **[LEGAL-SUITE](https://github.com/hm53-byte/LEGAL-SUITE)**
 Streamlit aplikacija koja iz web forme popuni predložak hrvatskog pravnog
 podneska ili ugovora i vrati .docx, za osobu koja već zna koji dokument
-treba; 18 modula generatora.
+treba; 18 modula generatora, 282 testa prolaze u CI-ju.
 
 **[croatian-registry-pipeline](https://github.com/hm53-byte/croatian-registry-pipeline)**
 Cjevovod koji prikuplja objave iz hrvatskih javnih registara i spaja
@@ -31,7 +31,8 @@ Index of public repositories.
 - **croatian-case-law**: local corpus of Croatian case law with SQLite,
   FTS5 and hybrid search, for offline research; 298 tests pass in CI.
 - **LEGAL-SUITE**: Streamlit app that fills Croatian legal document
-  templates from a web form and returns .docx; 18 generator modules.
+  templates from a web form and returns .docx; 18 generator modules,
+  282 tests pass in CI.
 - **DOSJE**: skeleton tool that compares land registry and cadastre records
   for the same parcel and resolves the link between them; a 100-parcel
   measurement raised joinability from 0.60 to 0.86; 191 tests pass in CI.
