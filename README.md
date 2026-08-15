@@ -8,7 +8,8 @@ zatvorenog sustava: opis arhitekture, mjerene brojke i jedan modul objavljen
 u cijelosti. Gdje je tako, u naslovu repozitorija pise izlog.
 
 Sve brojke o testovima izmjerene su pokretanjem, a datum mjerenja stoji u
-svakom repozitoriju.
+svakom repozitoriju. Izlozi navode i sto citatelj moze provjeriti sam, a sto
+ne moze jer dolazi iz zatvorenog repozitorija.
 
 ---
 
@@ -21,8 +22,7 @@ hibridnom pretragom, za istrazivanje prakse bez mreznih zahtjeva.
 **[LEGAL-SUITE](https://github.com/hm53-byte/LEGAL-SUITE)**
 Streamlit aplikacija koja iz web forme popuni predlozak hrvatskog pravnog
 podneska ili ugovora i vrati .docx, za osobu koja vec zna koji dokument treba.
-18 modula generatora. Vlasnicka licencija: kod je vidljiv radi uvida, nije
-otvoren za uporabu.
+82 generatora u 18 modula.
 
 **[croatian-registry-pipeline](https://github.com/hm53-byte/croatian-registry-pipeline)**
 Cjevovod koji prikuplja objave iz hrvatskih javnih registara i spaja entitete
@@ -106,7 +106,7 @@ sazima. Sve troje stoji zapisano uz test koji ga pribija.
 
 Index of public repositories. Complete tools: a local corpus of Croatian case
 law with FTS5 and hybrid search; a Streamlit generator of Croatian legal
-documents (proprietary license, source-visible); a public-registry collection
+documents; a public-registry collection
 pipeline whose CI tests protect a negative finding; a land-registry and
 cadastre reconciliation skeleton; an ultrametric hierarchical index for court
 case numbers; label-free probes and non-circular channels for extraction
