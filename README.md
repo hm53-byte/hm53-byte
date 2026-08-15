@@ -34,10 +34,21 @@ Kostur alata koji usporedjuje zemljisnoknjizni i katastarski zapis o istoj
 cestici i razrjesava vezu medju njima. Mjerenje na 100 cestica podiglo je
 spojivost s 0,60 na 0,86.
 
-**[engineering-cycles](https://github.com/hm53-byte/engineering-cycles)**
-Protokol viseagentnih inzenjerskih ciklusa i dva mehanicka gatea: jedan mjeri
-dolazi li ciklus do ponora, drugi grepa stvarni kod prije nego projektant
-pretpostavi da simbol ne postoji. Bez vanjskih ovisnosti, 27 testova.
+**[padic-address-index](https://github.com/hm53-byte/padic-address-index)**
+Hijerarhijsko suzavanje nad hrvatskim sudskim spisima prije semantickog
+dohvata. Adresa od pet clanova i ultrametrika umjesto euklidske udaljenosti,
+pa su skupine ili disjunktne ili ugnijezdene, nikad djelomicno preklopljene.
+332 retka bez ovisnosti, 47 testova.
+
+**[extraction-guards](https://github.com/hm53-byte/extraction-guards)**
+Kako provjeriti ekstraktor bez oznacenog skupa podataka. Dodavanje poznate
+kolicine mjeri tocnost, metamorficka proba po padezima mjeri stabilnost.
+Nijedna sama nije dovoljna: naivni ekstraktor koji grijesi u svih 50 slucajeva
+prolazi metamorficku probu 9 od 9.
+
+**[reality-ground](https://github.com/hm53-byte/reality-ground)**
+Provjeri mehanicki postoji li funkcija, tablica ili modul vec u kodu prije
+nego ga napises. Nastalo iz dva propusta u istoj veceri, oba zapisana.
 
 ## Izlozi zatvorenih sustava
 
@@ -90,8 +101,9 @@ Index of public repositories. Complete tools: a local corpus of Croatian case
 law with FTS5 and hybrid search; a Streamlit generator of Croatian legal
 documents (proprietary license, source-visible); a public-registry collection
 pipeline whose CI tests protect a negative finding; a land-registry and
-cadastre reconciliation skeleton; and a protocol with two mechanical gates for
-multi-agent engineering cycles.
+cadastre reconciliation skeleton; an ultrametric hierarchical index for court
+case numbers; two label-free probes for extractor quality; and a tool that
+checks whether a symbol already exists before you write it.
 
 Showcases of closed systems, each with measured figures and one module
 published in full: a temporal distress monitor over public registries (2089
