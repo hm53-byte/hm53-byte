@@ -41,10 +41,17 @@ pa su skupine ili disjunktne ili ugnijezdene, nikad djelomicno preklopljene.
 332 retka bez ovisnosti, 47 testova.
 
 **[extraction-guards](https://github.com/hm53-byte/extraction-guards)**
-Kako provjeriti ekstraktor bez oznacenog skupa podataka. Dodavanje poznate
-kolicine mjeri tocnost, metamorficka proba po padezima mjeri stabilnost.
-Nijedna sama nije dovoljna: naivni ekstraktor koji grijesi u svih 50 slucajeva
-prolazi metamorficku probu 9 od 9.
+Kako provjeriti izlaz ekstrakcije bez oznacenog skupa i bez drugog modela.
+Dodavanje poznate kolicine mjeri tocnost, metamorficka proba mjeri stabilnost,
+a pet kanala koji s modelom ne dijele nacin otkazivanja provjerava pojedini
+odgovor. Nijedna proba sama nije dovoljna: naivni ekstraktor koji grijesi u
+svih 50 slucajeva prolazi metamorficku probu 9 od 9. 36 testova.
+
+**[sink-gate](https://github.com/hm53-byte/sink-gate)**
+Staticka AST provjera koja hvata modul koji radi posao a rezultat mu nikamo ne
+tece, i modul koji prekoracuje svoj sloj. Nije mrtav kod u uobicajenom smislu:
+uvozi se, ima testove i testovi prolaze. Bez ovisnosti, 15 testova, primjer s
+oba kvara ukljucen.
 
 **[reality-ground](https://github.com/hm53-byte/reality-ground)**
 Provjeri mehanicki postoji li funkcija, tablica ili modul vec u kodu prije
@@ -102,8 +109,9 @@ law with FTS5 and hybrid search; a Streamlit generator of Croatian legal
 documents (proprietary license, source-visible); a public-registry collection
 pipeline whose CI tests protect a negative finding; a land-registry and
 cadastre reconciliation skeleton; an ultrametric hierarchical index for court
-case numbers; two label-free probes for extractor quality; and a tool that
-checks whether a symbol already exists before you write it.
+case numbers; label-free probes and non-circular channels for extraction
+quality; a static AST gate for modules whose output never reaches a sink; and a
+tool that checks whether a symbol already exists before you write it.
 
 Showcases of closed systems, each with measured figures and one module
 published in full: a temporal distress monitor over public registries (2089
